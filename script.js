@@ -66,4 +66,14 @@ function writePassword() {
         }
         console.log(answer)
     }
+
+    for (var i = 0; i < confirmLength; i++) {
+        answer[
+          Math.floor(Math.random() * answer.length)];
+    
+        newPassword += answer [
+          Math.floor(Math.random() * answer.length)];
+      
+         } 
+         return newPassword; 
   }
