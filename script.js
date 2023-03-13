@@ -42,4 +42,28 @@ function writePassword() {
         }
         console.log(answer)
     }
+
+    var lowerConfirm = confirm("Do you want lowercase letters?")
+    if (lowerConfirm === true) {
+        for (var i = 0; i < lowercase.length; i++) {
+            answer.push(lowercase[i]);
+        }
+        console.log(answer)
+    }
+
+    var numberConfirm = confirm("Do you want numbers?")
+    if (numberConfirm === true) {
+        for (var i = 0; i < numbers.length; i++) {
+            answer.push(numbers[i]);
+        }
+        console.log(answer)
+    }
+
+    var specialConfirm = confirm("Do you want special characters?")
+    if (specialConfirm === true) {
+        for (var i = 0; i < specialChar.length; i++) {
+            answer.push(specialChar[i]);
+        }
+        console.log(answer)
+    }
   }
