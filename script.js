@@ -35,5 +35,11 @@ function writePassword() {
         return
     }
 
-
+    var upperConfirm = confirm("Do you want uppercase letters?")
+    if (upperConfirm === true) {
+        for (var i = 0; i < uppercase.length; i++) {
+            answer.push(uppercase[i]);
+        }
+        console.log(answer)
+    }
   }
