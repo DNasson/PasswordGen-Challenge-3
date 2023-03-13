@@ -27,4 +27,13 @@ function writePassword() {
         prompt ("How many characters?")
     )
     var confirmLength = parseInt(passwordLength);
+
+    // Verify number of characters desired
+
+    if (passwordLength <8 || passwordLength >128 || isNaN(passwordLength)) {
+        alert ("Must be between 8 and 128 characters")
+        return
+    }
+
+
   }
