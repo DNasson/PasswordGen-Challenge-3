@@ -34,7 +34,7 @@ function writePassword() {
         alert ("Must be between 8 and 128 characters")
         return
     }
-
+//  Verify user wants uppercase letters 
     var upperConfirm = confirm("Do you want uppercase letters?")
     if (upperConfirm === true) {
         for (var i = 0; i < uppercase.length; i++) {
@@ -42,7 +42,7 @@ function writePassword() {
         }
         console.log(answer)
     }
-
+//  Verify user wants lowercase letters 
     var lowerConfirm = confirm("Do you want lowercase letters?")
     if (lowerConfirm === true) {
         for (var i = 0; i < lowercase.length; i++) {
@@ -50,7 +50,7 @@ function writePassword() {
         }
         console.log(answer)
     }
-
+//  Verify user wants numbers 
     var numberConfirm = confirm("Do you want numbers?")
     if (numberConfirm === true) {
         for (var i = 0; i < numbers.length; i++) {
@@ -58,7 +58,7 @@ function writePassword() {
         }
         console.log(answer)
     }
-
+//  Verify user wants special characters
     var specialConfirm = confirm("Do you want special characters?")
     if (specialConfirm === true) {
         for (var i = 0; i < specialChar.length; i++) {
@@ -66,7 +66,7 @@ function writePassword() {
         }
         console.log(answer)
     }
-
+// Randomization info
     for (var i = 0; i < confirmLength; i++) {
         answer[
           Math.floor(Math.random() * answer.length)];
